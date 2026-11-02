@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://vrm_samples/constraint_test/constraint_test.gd" id="1"]
+
+[node name="ConstraintTest" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.99, 0.14, 0, -0.14, 0.99, 0, 1.1, 2.9)
+fov = 45.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.87, -0.32, 0.38, 0, 0.77, 0.64, -0.5, -0.55, 0.66, 0, 3, 0)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 12.0
+theme_override_font_sizes/font_size = 18
